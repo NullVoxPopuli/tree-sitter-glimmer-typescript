@@ -15,9 +15,9 @@
   "devDependencies": {
     "eslint": ">=8.57.0",
     "eslint-config-google": "^0.14.0",
+    "prebuildify": "^6.0.1",
     "tree-sitter-cli": "^0.22.6",
-    "tree-sitter-javascript": "^0.21.4",
-    "prebuildify": "^6.0.1"
+    "tree-sitter-javascript": "^0.21.4"
   },
   "scripts": {
     "install": "node-gyp-build",
@@ -49,6 +49,13 @@
       ],
       "injections": "node_modules/tree-sitter-typescript/queries/injections.scm",
       "injection-regex": "^(gts|glimmer-ts)$"
-    },
-  ]
+    }
+  ],
+  "dependencies": {
+    "tree-sitter-typescript": "^0.21.2"
+  },
+  "volta": {
+    "node": "20.16.0",
+    "pnpm": "9.7.1"
+  }
 }
