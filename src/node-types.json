@@ -1413,6 +1413,16 @@
             "named": true
           }
         ]
+      },
+      "template": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "glimmer_template",
+            "named": true
+          }
+        ]
       }
     },
     "children": {
