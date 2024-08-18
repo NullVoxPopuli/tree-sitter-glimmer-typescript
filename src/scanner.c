@@ -13,7 +13,7 @@
 //
 //
 // ----------------------------------------------------------
-#include "node_modules/tree-sitter-typescript/common/scanner.h"
+#include "../node_modules/tree-sitter-typescript/common/scanner.h"
 
 void *tree_sitter_glimmer_typescript_external_scanner_create() { return NULL; }
 
