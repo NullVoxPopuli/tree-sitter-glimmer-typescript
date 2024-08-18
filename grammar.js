@@ -1,8 +1,7 @@
 "use strict";
 
-const TypeScript = require("tree-sitter-typescript").typescript;
+const TypeScript = require("tree-sitter-typescript/typescript/grammar");
 
-console.log(TypeScript);
 /**
  * A <template></template> block can exist in
  * two types of locations:
@@ -14,7 +13,7 @@ console.log(TypeScript);
  *   https://github.com/ember-tooling/tree-sitter-glimmer
  */
 module.exports = grammar(TypeScript, {
-  name: "glimmer.typescript",
+  name: "glimmertypescript",
 
   /**
    * TODO: add support for attributes
