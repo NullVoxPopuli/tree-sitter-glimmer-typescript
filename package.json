@@ -40,6 +40,7 @@
     "tree-sitter-typescript": "^0.21.2"
   },
   "scripts": {
+    "build:local": "tree-sitter build -o parser/glimmer_typescript.so",
     "install": "node-gyp-build",
     "prebuildify": "prebuildify --napi --strip",
     "build": "tree-sitter generate --no-bindings",
