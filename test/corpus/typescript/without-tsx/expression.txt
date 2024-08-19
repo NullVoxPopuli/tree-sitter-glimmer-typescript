@@ -360,7 +360,6 @@ const ErrorMap = Map<string, Error>;
 
 ==========================
 Type assertions
-:language(typescript)
 ==========================
 
 <A>b;
@@ -380,31 +379,6 @@ Type assertions
       (identifier)
       (property_identifier)))))
 
-==========================================================
-Type arguments in JSX
-:language(tsx)
-==========================================================
-
-<Element<T>>hi</Element>;
-<Element<T> />;
-<>fragment</>;
-
----
-
-(program
-  (expression_statement
-    (jsx_element
-      (jsx_opening_element (identifier) (type_arguments (type_identifier)))
-      (jsx_text)
-      (jsx_closing_element (identifier))))
-  (expression_statement
-    (jsx_self_closing_element
-       (identifier) (type_arguments (type_identifier))))
-  (expression_statement
-    (jsx_element
-      (jsx_opening_element)
-      (jsx_text)
-      (jsx_closing_element))))
 
 ==================================
 Ternary expression

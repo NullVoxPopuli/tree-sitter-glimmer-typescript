@@ -111,7 +111,7 @@ class InClass {
 
 (program
   (class_declaration
-    (identifier)
+    (type_identifier)
     (class_body
       (glimmer_template
         (glimmer_opening_tag)
