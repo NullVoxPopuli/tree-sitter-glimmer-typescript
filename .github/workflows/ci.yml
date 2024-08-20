@@ -64,6 +64,8 @@ jobs:
             test -f src/scanner.c && ! git diff --quiet HEAD^ -- "$_" &&
             printf 'changed=true\n' || printf 'changed=false\n'
           } >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+      - run: npm install
       - name: Run fuzzer
         uses: tree-sitter/fuzz-action@v4
         if: steps.scanner-check.outputs.changed == 'true'
