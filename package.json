@@ -73,8 +73,8 @@
       ],
       "injections": [
         "node_modules/tree-sitter-typescript/queries/injections.scm",
-        "node_modules/tree-sitter-javascript/queries/injections.scm",
-      ]
+        "node_modules/tree-sitter-javascript/queries/injections.scm"
+      ],
       "injection-regex": "^(gts|glimmer-ts)$"
     }
   ],
