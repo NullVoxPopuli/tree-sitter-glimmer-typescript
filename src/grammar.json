@@ -1,5 +1,15 @@
 {
-  "name": "glimmertypescript",
+  "0": "t",
+  "1": "y",
+  "2": "p",
+  "3": "e",
+  "4": "s",
+  "5": "c",
+  "6": "r",
+  "7": "i",
+  "8": "p",
+  "9": "t",
+  "name": "glimmer_typescript",
   "word": "identifier",
   "rules": {
     "program": {
@@ -1989,6 +1999,10 @@
     "expression": {
       "type": "CHOICE",
       "members": [
+        {
+          "type": "SYMBOL",
+          "name": "glimmer_template"
+        },
         {
           "type": "SYMBOL",
           "name": "as_expression"
@@ -6660,6 +6674,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "FIELD",
+                "name": "template",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "glimmer_template"
+                }
               },
               {
                 "type": "STRING",
@@ -11885,4 +11907,3 @@
     "primary_type"
   ]
 }
-

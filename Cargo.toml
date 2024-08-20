@@ -1,10 +1,10 @@
 [package]
-name = "tree-sitter-glimmertypescript"
-description = "glimmertypescript grammar for the tree-sitter parsing library"
+name = "tree-sitter-glimmer_typescript"
+description = "glimmer_typescript grammar for the tree-sitter parsing library"
 version = "0.0.1"
-keywords = ["incremental", "parsing", "glimmertypescript"]
+keywords = ["incremental", "parsing", "glimmer_typescript"]
 categories = ["parsing", "text-editors"]
-repository = "https://github.com/tree-sitter/tree-sitter-glimmertypescript"
+repository = "https://github.com/tree-sitter/tree-sitter-glimmer_typescript"
 edition = "2018"
 license = "MIT"
 
