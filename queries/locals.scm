@@ -1,2 +1,5 @@
-(required_parameter (identifier) @local.definition)
-(optional_parameter (identifier) @local.definition)
+(required_parameter
+  (identifier) @local.definition)
+
+(optional_parameter
+  (identifier) @local.definition)
