@@ -1,5 +1,7 @@
 fn main() {
+    let root_dir = std::path::Path::new(".");
     let src_dir = std::path::Path::new("src");
+    let typescript_dir = root_dir.join("tree-sitter-typescript").join("src");
 
     let mut c_config = cc::Build::new();
     c_config.include(&src_dir);
@@ -18,6 +20,11 @@ fn main() {
 
     let scanner_path = src_dir.join("scanner.c");
     c_config.file(&scanner_path);
+
+    println!(
+        "cargo:rerun-if-changed={}",
+        typescript_dir.join("scanner.h").to_str().unwrap()
+    );
     println!("cargo:rerun-if-changed={}", scanner_path.to_str().unwrap());
 
     c_config.compile("parser");
