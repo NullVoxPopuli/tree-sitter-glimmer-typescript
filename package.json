@@ -59,35 +59,5 @@
     "onlyBuiltDependencies": [
       "tree-sitter-cli"
     ]
-  },
-  "tree-sitter": [
-    {
-      "scope": "source.gts",
-      "file-types": [
-        "gts",
-        "typescript.glimmer"
-      ],
-      "path": "./",
-      "highlights": [
-        "queries/highlights.scm",
-        "node_modules/tree-sitter-typescript/queries/highlights.scm",
-        "node_modules/tree-sitter-javascript/queries/highlights.scm"
-      ],
-      "locals": [
-        "queries/locals.scm",
-        "node_modules/tree-sitter-typescript/queries/locals.scm",
-        "node_modules/tree-sitter-javascript/queries/locals.scm"
-      ],
-      "tags": [
-        "queries/tags.scm",
-        "node_modules/tree-sitter-typescript/queries/tags.scm",
-        "node_modules/tree-sitter-javascript/queries/tags.scm"
-      ],
-      "injections": [
-        "node_modules/tree-sitter-typescript/queries/injections.scm",
-        "node_modules/tree-sitter-javascript/queries/injections.scm"
-      ],
-      "injection-regex": "^(gts|glimmer-ts)$"
-    }
-  ]
+  }
 }
