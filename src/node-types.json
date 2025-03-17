@@ -2751,6 +2751,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "raw_text",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -4365,6 +4375,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "raw_text",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "readonly_type",

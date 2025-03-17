@@ -14,6 +14,7 @@ const Named = <template>
       (identifier)
       (glimmer_template
         (glimmer_opening_tag)
+        (raw_text)
         (glimmer_closing_tag)))))
 
 
@@ -52,11 +53,13 @@ const WithSemi = <template>
       (identifier)
       (glimmer_template
         (glimmer_opening_tag)
+        (raw_text)
         (glimmer_closing_tag))))
 
   (expression_statement
     (glimmer_template
       (glimmer_opening_tag)
+      (raw_text)
       (glimmer_closing_tag))))
 
 ============================================
@@ -90,11 +93,13 @@ const WithSemi = <template>
       (identifier)
       (glimmer_template
         (glimmer_opening_tag)
+        (raw_text)
         (glimmer_closing_tag))))
 
   (expression_statement
     (glimmer_template
       (glimmer_opening_tag)
+      (raw_text)
       (glimmer_closing_tag))))
 
 ============================================
@@ -115,6 +120,7 @@ class InClass {
     (class_body
       (glimmer_template
         (glimmer_opening_tag)
+        (raw_text)
         (glimmer_closing_tag)))))
 
 ============================================
@@ -132,5 +138,6 @@ JS Regex Evasion
   (expression_statement
     (glimmer_template
       (glimmer_opening_tag)
+      (raw_text)
       (glimmer_closing_tag)
     )))
