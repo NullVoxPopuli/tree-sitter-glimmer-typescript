@@ -31,7 +31,7 @@ module.exports = grammar(TypeScript, {
     glimmer_template: ($) =>
       seq(
         field("open_tag", $.glimmer_opening_tag),
-        optional(alias(repeat($._glimmer_template_content), $.raw_text)),
+        optional($.raw_text),
         field("close_tag", $.glimmer_closing_tag),
       ),
 

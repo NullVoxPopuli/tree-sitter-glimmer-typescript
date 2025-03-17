@@ -2767,16 +2767,8 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "ALIAS",
-              "content": {
-                "type": "REPEAT",
-                "content": {
-                  "type": "SYMBOL",
-                  "name": "_glimmer_template_content"
-                }
-              },
-              "named": true,
-              "value": "raw_text"
+              "type": "SYMBOL",
+              "name": "raw_text"
             },
             {
               "type": "BLANK"

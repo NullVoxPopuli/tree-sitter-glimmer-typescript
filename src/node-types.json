@@ -4377,11 +4377,6 @@
     }
   },
   {
-    "type": "raw_text",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "readonly_type",
     "named": true,
     "fields": {},
@@ -5925,6 +5920,10 @@
   {
     "type": "public",
     "named": false
+  },
+  {
+    "type": "raw_text",
+    "named": true
   },
   {
     "type": "readonly",
