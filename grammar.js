@@ -15,6 +15,8 @@ const TypeScript = require("tree-sitter-typescript/typescript/grammar");
 module.exports = grammar(TypeScript, {
   name: "glimmer_typescript",
 
+  externals: ($, previous) => previous.concat([$.raw_text]),
+
   rules: {
     /**
      * TODO: add support for attributes
@@ -27,18 +29,10 @@ module.exports = grammar(TypeScript, {
      *         https://github.com/emberjs/rfcs/
      */
     glimmer_template: ($) =>
-      choice(
-        seq(
-          field("open_tag", $.glimmer_opening_tag),
-          field("content", repeat($._glimmer_template_content)),
-          field("close_tag", $.glimmer_closing_tag),
-        ),
-        // empty template has no content
-        // <template></template>
-        seq(
-          field("open_tag", $.glimmer_opening_tag),
-          field("close_tag", $.glimmer_closing_tag),
-        ),
+      seq(
+        field("open_tag", $.glimmer_opening_tag),
+        optional(alias(repeat($._glimmer_template_content), $.raw_text)),
+        field("close_tag", $.glimmer_closing_tag),
       ),
 
     _glimmer_template_content: (_) => /.{1,}/,
