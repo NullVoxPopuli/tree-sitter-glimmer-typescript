@@ -35,9 +35,9 @@ module.exports = grammar(TypeScript, {
         field("close_tag", $.glimmer_closing_tag),
       ),
 
-    _glimmer_template_content: (_) => /.{1,}/,
-    glimmer_opening_tag: (_) => "<template>",
-    glimmer_closing_tag: (_) => "</template>",
+    glimmer_opening_tag: ($) => seq("<", $.glimmer_template_tag_name, ">"),
+    glimmer_closing_tag: ($) => seq("</", $.glimmer_template_tag_name, ">"),
+    glimmer_template_tag_name: (_) => "template",
 
     /**
      * 2. Any Expression.

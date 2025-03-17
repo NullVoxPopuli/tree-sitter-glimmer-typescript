@@ -2790,12 +2790,38 @@
       "value": ".{1,}"
     },
     "glimmer_opening_tag": {
-      "type": "STRING",
-      "value": "<template>"
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "<"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "glimmer_template_tag_name"
+        },
+        {
+          "type": "STRING",
+          "value": ">"
+        }
+      ]
     },
     "glimmer_closing_tag": {
-      "type": "STRING",
-      "value": "</template>"
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "</"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "glimmer_template_tag_name"
+        },
+        {
+          "type": "STRING",
+          "value": ">"
+        }
+      ]
     },
     "_jsx_element": {
       "type": "CHOICE",
@@ -11137,6 +11163,10 @@
       },
       "named": true,
       "value": "type_identifier"
+    },
+    "glimmer_template_tag_name": {
+      "type": "STRING",
+      "value": "template"
     }
   },
   "extras": [
