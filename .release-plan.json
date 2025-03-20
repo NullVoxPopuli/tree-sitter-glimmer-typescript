@@ -2,8 +2,8 @@
   "solution": {
     "tree-sitter-glimmer-typescript": {
       "impact": "minor",
-      "oldVersion": "0.1.0",
-      "newVersion": "0.2.0",
+      "oldVersion": "0.2.0",
+      "newVersion": "0.3.0",
       "constraints": [
         {
           "impact": "minor",
@@ -13,5 +13,5 @@
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-03-17)\n\ntree-sitter-glimmer-typescript 0.2.0 (minor)\n\n#### :rocket: Enhancement\n* `tree-sitter-glimmer-typescript`\n  * [#8](https://github.com/NullVoxPopuli/tree-sitter-glimmer-typescript/pull/8) Expose template content as `raw_text` ([@mogstad](https://github.com/mogstad))\n\n#### Committers: 1\n- Bjarne Mogstad ([@mogstad](https://github.com/mogstad))\n"
+  "description": "## Release (2025-03-20)\n\ntree-sitter-glimmer-typescript 0.3.0 (minor)\n\n#### :rocket: Enhancement\n* `tree-sitter-glimmer-typescript`\n  * [#10](https://github.com/NullVoxPopuli/tree-sitter-glimmer-typescript/pull/10) Explore using external scanner for parsing <template> content ([@mogstad](https://github.com/mogstad))\n\n#### Committers: 1\n- Bjarne Mogstad ([@mogstad](https://github.com/mogstad))\n"
 }
