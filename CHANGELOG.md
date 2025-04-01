@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-04-01)
+
+tree-sitter-glimmer-typescript 0.3.1 (patch)
+
+#### :house: Internal
+* `tree-sitter-glimmer-typescript`
+  * [#12](https://github.com/ember-tooling/tree-sitter-glimmer-typescript/pull/12) Update the repository field ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-03-20)
 
 tree-sitter-glimmer-typescript 0.3.0 (minor)
