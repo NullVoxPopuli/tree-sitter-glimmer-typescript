@@ -1,17 +1,17 @@
 {
   "solution": {
     "tree-sitter-glimmer-typescript": {
-      "impact": "minor",
-      "oldVersion": "0.2.0",
-      "newVersion": "0.3.0",
+      "impact": "patch",
+      "oldVersion": "0.3.0",
+      "newVersion": "0.3.1",
       "constraints": [
         {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-03-20)\n\ntree-sitter-glimmer-typescript 0.3.0 (minor)\n\n#### :rocket: Enhancement\n* `tree-sitter-glimmer-typescript`\n  * [#10](https://github.com/NullVoxPopuli/tree-sitter-glimmer-typescript/pull/10) Explore using external scanner for parsing <template> content ([@mogstad](https://github.com/mogstad))\n\n#### Committers: 1\n- Bjarne Mogstad ([@mogstad](https://github.com/mogstad))\n"
+  "description": "## Release (2025-04-01)\n\ntree-sitter-glimmer-typescript 0.3.1 (patch)\n\n#### :house: Internal\n* `tree-sitter-glimmer-typescript`\n  * [#12](https://github.com/ember-tooling/tree-sitter-glimmer-typescript/pull/12) Update the repository field ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
